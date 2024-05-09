@@ -1,0 +1,26 @@
+/* .center-form için stillendirme */
+.center-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; /* vh olarak ayarlayın */
+}
+
+/* .center-form-Form için stillendirme */
+.center-form Form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px; /* Burada padding değeri ekleyin */
+    border: 1px solid #ccc; 
+    background-color: #efff; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+/* .center-form Form .form-control için stillendirme */
+.center-form Form .form-control {
+    margin-bottom: 20px;
+    padding: 10px;
+}

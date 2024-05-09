@@ -1,0 +1,22 @@
+/* Style the navbar background and brand */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar .navbar-brand {
+    color: #fff; /* Beyaz metin rengi */
+}
+
+/* Stil gezinme bağlantıları */
+.navbar-nav .nav-link {
+    color: #fff !important; /* Beyaz metin rengi */
+    text-decoration: none !important; /* Altçizgiyi kaldır */
+    margin-right: 20px; /* Bağlantılar arasına boşluk ekleyin */
+}
+
+/* Küçük ekranlar için medya sorgusu ekle */
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        margin-right: 0; /* Küçük ekranlar için boşluğu kaldır */
+    }
+}
