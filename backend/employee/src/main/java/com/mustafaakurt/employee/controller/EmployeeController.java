@@ -20,11 +20,12 @@ public class EmployeeController {
     private final EmployeeService employeeService;
 
     @PostMapping("/employee")
-    public Employee postEmployee(@RequestBody Employee employee){
-        return employeeService.postEmployee(employee);
+    public ResponseEntity<Employee> postEmployee(@RequestBody Employee employee) {
+        Employee createdEmployee = employeeService.postEmployee(employee);
+        return ResponseEntity.status(HttpStatus.CREATED).body(createdEmployee);
     }
 
-    @GetMapping("/employees")
+    @GetMapping("/employee")
     public List<Employee> getAllEmployees(){
         return employeeService.getAllEmployees();
     }
@@ -35,7 +36,7 @@ public class EmployeeController {
             employeeService.deleteEmployee(id);
             return new ResponseEntity<>("Employee with ID " + id + " deleted succesfully.", HttpStatus.OK);
         }catch (EntityNotFoundException e){
-            return new ResponseEntity(e.getMessage(), HttpStatus.NOT_FOUND);
+            return new ResponseEntity(e.getMessage(), HttpStatus.NO_CONTENT);
         }
     }
 
