@@ -5,7 +5,7 @@
 
 Bu proje, bir işçi (employee) veritabanı yönetim uygulamasıdır. Uygulama, çalışanların eklenmesini, güncellenmesini, silinmesini ve listelenmesini sağlar. Aşağıdaki video, projenin çalışmasını ve nasıl kullanılacağını göstermektedir:
 
-[Employee CRUD](https://www.youtube.com/watch?v=5zArepYoSYA)
+[Employee CRUD](https://youtu.be/RqgPoin6aCo)
 
 ## 💻 Kullanılan Teknolojiler
 
@@ -32,7 +32,7 @@ _Çalışanı Güncelleme Formu: Var olan bir çalışan güncellemek için kull
 Postman ile uygulamaya erişmek için aşağıdaki istekleri kullanabilirsiniz:
 
 - **GET**: Tüm çalışanları listeleme  
-  `http://localhost:8080/api/employees`
+  `http://localhost:8080/api/employee`
 
 - **POST**: Yeni çalışan ekleme  
   `http://localhost:8080/api/employee`  
@@ -46,7 +46,7 @@ Postman ile uygulamaya erişmek için aşağıdaki istekleri kullanabilirsiniz:
   ```
 
 - **PATCH**: Çalışan bilgilerini güncelleme  
-  `http://localhost:8080/api/employee/1`  
+  `http://localhost:8080/api/employee/{id}`  
   ```json
   {
       "name": "Updated Name",
@@ -57,10 +57,10 @@ Postman ile uygulamaya erişmek için aşağıdaki istekleri kullanabilirsiniz:
   ```
 
 - **DELETE**: Çalışanı silme  
-  `http://localhost:8080/api/employee/1`
+  `http://localhost:8080/api/employee/{id}`
 
 - **GET**: Çalışanı ID'ye göre getirme  
-  `http://localhost:8080/api/employee/1`
+  `http://localhost:8080/api/employee/{id}`
 
 
 
