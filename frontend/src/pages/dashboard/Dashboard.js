@@ -12,7 +12,7 @@ const Dashboard = () =>{
     useEffect( () =>{
         const fetchEmployees = async () =>{
             try {
-                const response = await fetch("http://localhost:8080/api/employees");
+                const response = await fetch("http://localhost:8080/api/employee");
                 const data = await response.json();
 
                 setEmployees(data);
